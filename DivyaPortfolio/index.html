@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divya Portfolio | Web Developer & AI Enthusiast</title>
+  <meta name="description" content="Divya's professional portfolio showcasing web development and AI projects.">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Divya Portfolio</h1>
+      <button class="hamburger" id="hamburger" aria-label="Open navigation menu">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="section hero">
+    <h2 id="animatedName"></h2>
+    <p>Aspiring Web Developer | AI Enthusiast</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I specialize in web development and AI integration, with a strong foundation in both front-end. My passion lies in building modern, responsive, and user-friendly applications that solve real-world problems. I enjoy collaborating with diverse teams, continuously learning new skills, and staying updated with the latest trends in technology. My experience includes working on projects involving Artificial Intelligence and UI/UX design. I am committed to delivering high-quality solutions and am always eager to take on new challenges that push my creative and technical boundaries.
+    </p>
+    <ul>
+      <li>Expertise: HTML, CSS, JavaScript, Python</li>
+      <li>Interests: AI, UI/UX</li>
+      <li>Education: B.Tech in Computer Science and Engineering with specialization in Artificial Intelligence</li>
+    </ul>
+  </section>
+
+  <!-- Projects Gallery -->
+  <section id="projects" class="section">
+    <h2>My Projects</h2>
+    <div class="gallery">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Portfolio Website Screenshot">
+        <figcaption>Portfolio Website</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="AI Chatbot Screenshot">
+        <figcaption>AI Chatbot</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="E-commerce App Screenshot">
+        <figcaption>E-commerce App</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your Name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit"><span>Send Message</span></button>
+      <div id="formMessage" aria-live="polite"></div>
+    </form>
+    <div style="margin-top:1rem;">
+      <strong>Email:</strong>
+      <a href="mailto:divyakamireddy27@gmail.com">divyakamireddy27@gmail.com</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Divya Portfolio</p>
+      <div class="social-links">
+      <!-- LinkedIn SVG -->
+      <a href="https://www.linkedin.com/in/divyakamireddy/" target="_blank" aria-label="LinkedIn">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect width="32" height="32" rx="6" fill="#0077B5"/>
+          <path d="M10.667 13.333h2.666v8h-2.666v-8zm1.333-4a1.333 1.333 0 110 2.667 1.333 1.333 0 010-2.667zm3.333 4h2.56v1.093h.037c.357-.677 1.23-1.393 2.533-1.393 2.707 0 3.2 1.787 3.2 4.107v4.193h-2.667v-3.733c0-.893-.017-2.04-1.24-2.04-1.24 0-1.427.967-1.427 1.967v3.806h-2.667v-8z" fill="#fff"/>
+        </svg>
+      </a>
+
+      <!-- GitHub SVG -->
+      <a href="https://github.com/KamireddyDivya27" target="_blank" aria-label="GitHub">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect width="32" height="32" rx="6" fill="#181717"/>
+          <path d="M16 7.333c-4.8 0-8.667 3.867-8.667 8.667 0 3.84 2.493 7.093 5.947 8.253.433.08.593-.187.593-.413 0-.2-.007-.72-.013-1.413-2.42.527-2.933-1.167-2.933-1.167-.393-.993-.96-1.253-.96-1.253-.787-.54.06-.527.06-.527.867.06 1.32.893 1.32.893.773 1.32 2.027.94 2.52.72.08-.56.307-.94.56-1.16-1.933-.22-3.967-.967-3.967-4.307 0-.953.34-1.733.893-2.347-.093-.22-.387-1.107.087-2.307 0 0 .727-.233 2.387.893a8.28 8.28 0 012.173-.293c.74.003 1.487.1 2.173.293 1.66-1.127 2.387-.893 2.387-.893.473 1.2.18 2.087.087 2.307.553.613.893 1.393.893 2.347 0 3.347-2.04 4.083-3.98 4.3.313.267.6.793.6 1.6 0 1.153-.013 2.08-.013 2.367 0 .227.16.497.6.413A8.68 8.68 0 0024.667 16c0-4.8-3.867-8.667-8.667-8.667z" fill="#fff"/>
+        </svg>
+      </a>
+    </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
